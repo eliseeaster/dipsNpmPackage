@@ -21,6 +21,8 @@ function TestClass() {
         this.readOnly = readOnly;
     }
 }
-const tester = new TestClass();
-//Global variable: (https://stackoverflow.com/questions/53630310/use-functions-defined-in-es6-module-directly-in-html)
-window.tester = tester;
+
+module.exports.TestClass = TestClass;
+// const tester = new TestClass();
+// //Global variable: (https://stackoverflow.com/questions/53630310/use-functions-defined-in-es6-module-directly-in-html)
+// window.tester = tester;
