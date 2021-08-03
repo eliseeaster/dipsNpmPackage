@@ -22,7 +22,7 @@ function TestClass() {
     }
 }
 
-module.exports.TestClass = TestClass;
-// const tester = new TestClass();
+// module.exports.TestClass = TestClass;
+export const tester = new TestClass();
 // //Global variable: (https://stackoverflow.com/questions/53630310/use-functions-defined-in-es6-module-directly-in-html)
 // window.tester = tester;
